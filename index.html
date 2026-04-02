@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resin Art Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Resin Art Studio</h1>
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#order">Order</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="content">
+    <h2>Custom Resin Art</h2>
+    <p>Handmade premium pieces crafted from your ideas</p>
+    <a href="#order" class="btn">Order Now</a>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <h2>Our Work</h2>
+
+  <div class="grid">
+    <img src="images/img1.jpg" onclick="openImg(this.src)">
+    <img src="images/img2.jpg" onclick="openImg(this.src)">
+    <img src="images/img3.jpg" onclick="openImg(this.src)">
+    <img src="images/img4.jpg" onclick="openImg(this.src)">
+    <img src="images/img5.jpg" onclick="openImg(this.src)">
+    <img src="images/img6.jpg" onclick="openImg(this.src)">
+    <img src="images/img7.jpg" onclick="openImg(this.src)">
+    <img src="images/img8.jpg" onclick="openImg(this.src)">
+    <img src="images/img9.jpg" onclick="openImg(this.src)">
+    <img src="images/img10.jpg" onclick="openImg(this.src)">
+    <img src="images/img11.jpg" onclick="openImg(this.src)">
+  </div>
+
+</section>
+
+<section id="pricing" class="section">
+  <h2>Pricing</h2>
+  <div class="price">
+    <div>Keychains<br>₹199–₹399</div>
+    <div>Frames<br>₹599–₹1499</div>
+    <div>Custom Gifts<br>₹999+</div>
+  </div>
+</section>
+
+<section id="order" class="section">
+  <h2>Place Order</h2>
+  <form onsubmit="sendWhatsApp(); return false;">
+    <input id="name" placeholder="Your Name" required>
+    <textarea id="idea" placeholder="Your Design Idea" required></textarea>
+    <input id="budget" placeholder="Your Budget">
+    <button class="btn">Send on WhatsApp</button>
+  </form>
+</section>
+
+<div id="lightbox" onclick="closeImg()">
+  <img id="lightbox-img">
+</div>
+
+<footer>
+  © 2026 Resin Art Studio
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
